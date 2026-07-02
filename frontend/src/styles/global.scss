@@ -1,0 +1,74 @@
+/* Template presentation is intentionally controlled by the original Fuzzy CSS. */
+
+html {
+  scroll-padding-bottom: calc(90px + env(safe-area-inset-bottom));
+  -webkit-text-size-adjust: 100%;
+}
+
+.route-loading {
+  align-items: center;
+  color: #6f6874;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+button,
+a,
+input,
+select,
+textarea {
+  touch-action: manipulation;
+}
+
+.product-box-img {
+  aspect-ratio: 1;
+}
+
+.product-box-img > a,
+.product-box-img .img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  input,
+  select,
+  textarea,
+  .form-control {
+    font-size: 16px !important;
+  }
+
+  .btn,
+  .back-btn,
+  .notification,
+  .cart-bag,
+  .plus-minus-button,
+  .cart-trash {
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  .footer-modal,
+  .pay-popup,
+  .navbar-menu {
+    padding-bottom: calc(10px + env(safe-area-inset-bottom));
+  }
+
+  .footer-modal,
+  .pay-popup {
+    z-index: 1000;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: .01ms !important;
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}

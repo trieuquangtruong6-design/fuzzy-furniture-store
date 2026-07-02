@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#122636" />
+    <title>Fuzzy — Offline</title>
+    <style>
+      * { box-sizing: border-box; }
+      body { align-items: center; background: #f8f7fa; color: #28222d; display: flex; font-family: system-ui, sans-serif; justify-content: center; margin: 0; min-height: 100vh; padding: 24px; }
+      main { background: #fff; border: 1px solid #e9e5ec; border-radius: 24px; box-shadow: 0 16px 45px rgba(34,24,49,.08); max-width: 460px; padding: 40px 28px; text-align: center; width: 100%; }
+      .icon { align-items: center; background: #122636; border-radius: 22px; color: #ffc107; display: flex; font-size: 42px; font-weight: 800; height: 88px; justify-content: center; margin: 0 auto 24px; width: 88px; }
+      h1 { font-size: 28px; margin: 0 0 10px; } p { color: #746e78; line-height: 1.6; margin: 0 0 24px; }
+      button { background: #6e4b8b; border: 0; border-radius: 12px; color: #fff; cursor: pointer; font-size: 15px; font-weight: 700; padding: 13px 24px; width: 100%; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="icon">F</div>
+      <h1>You’re offline</h1>
+      <p>Check your internet connection and try again. Previously visited public pages may still be available.</p>
+      <button type="button" onclick="location.reload()">Try again</button>
+    </main>
+  </body>
+</html>
+

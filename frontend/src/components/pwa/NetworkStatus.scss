@@ -1,0 +1,22 @@
+.offline-banner {
+  align-items: center;
+  background: #2c2234;
+  border-radius: 14px;
+  bottom: calc(76px + env(safe-area-inset-bottom));
+  box-shadow: 0 10px 30px rgba(20, 12, 26, .25);
+  color: #fff;
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+  left: 50%;
+  max-width: calc(100% - 24px);
+  padding: 11px 13px;
+  position: fixed;
+  transform: translateX(-50%);
+  width: 460px;
+  z-index: 10000;
+}
+.offline-banner span { display: grid; }
+.offline-banner small { color: #d8cedd; font-size: 11px; }
+.offline-banner button { background: #fff; border: 0; border-radius: 9px; color: #36253f; font-size: 12px; font-weight: 700; padding: 8px 11px; white-space: nowrap; }
+
